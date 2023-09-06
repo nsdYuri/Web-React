@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Noto Sans Old Permic', sans-serif;
+    background-color: #02041f;
+}
+
+.promo-1{
+    margin: 70px;
+    padding:1%;
+    background-color: white;
+    text-align: center;
+    border-radius: 180px;
+}
+
+.tit-promo{
+    text-align: center;
+}
+.set-amarelo{
+    color:#f3ef6b;
+}
+
+
+.cut{
+    text-decoration: line-through;
+    color: red;
+}
+
+.destaque{
+    font-style: oblique;
+    color: greenyellow;
+}
+
+.promo-pic{
+    width: 370px;
+    height: 280px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
