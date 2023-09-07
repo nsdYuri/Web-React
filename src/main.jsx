@@ -13,8 +13,8 @@ import Error404 from './router/Error404.jsx';
 const routes = createBrowserRouter([
   { path: '/', element: <App />, errorElemnt:<Error404/>, children: [
       {path: '/', element: <Home/>},
-      {path: '/aparelhos', elemet: <Aparelhos/>},
-      {path: '/aprelho/:id', element: <VisualizarAparelho/>},
+      {path: '/aparelhos', element: <Aparelhos/>},
+      {path: '/aparelhos/:id', element: <VisualizarAparelho/>},
       {path: '/ofertas', element: <Ofertas/>},
       {path: '/acessorios', element: <Acessorios/>}
     ]  
