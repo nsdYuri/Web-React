@@ -10,38 +10,29 @@ body{
 }
 
 .promo-1{
-    margin: 70px;
+    margin: 20px 90px 40px 90px;
     padding:1%;
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    text-align: center;
-    border-radius: 180px;
+    align-items: center;
+    border-radius: 60px;
 }
 
-.tit-promo{
-    text-align: center;
-}
-.set-amarelo{
-    color:#f3ef6b;
-}
-
-
-.cut{
-    text-decoration: line-through;
-    color: red;
-}
-
-.destaque{
-    font-style: oblique;
-    color: greenyellow;
-}
 
 .promo-pic{
-    width: 370px;
-    height: 280px;
+    width: auto;
+    height: 410px;
+    border-radius: 80px;
 }
 
-.conteudo{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p{
+    font-family: 'MuseoModerno', cursive;
+    color: gold;
 }

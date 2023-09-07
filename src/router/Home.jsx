@@ -1,36 +1,24 @@
-import promoCameras from '../assets/promo-1-espec.jpeg';
-import promoCharging from '../assets/promo1-charging.jpeg';
-import promoMain from '../assets/moto-edge-promo1.webp';
-import './Home.css'
+import {Link} from 'react-router-dom';
+import promo1 from '../assets/banner-promo1.webp';
+import promo2 from '../assets/banner-promo2.webp';
+import './Home.css';
+import VisualizarAparelho from './VisualizarAparelho';
 
 export default function Home(){
     document.title = "Motorola";
     return(
         <body>
-            <div className="promo-1">
-                <h2 className="tit-promo">Promoção Setembro Amerelo - <span className='set-amarelo'>Moto Edge 30 Ultra</span></h2>
-                
-                <section className="conteudo">
-                    <img src={promoMain} alt="Motorola Edge 30 Ultra" className="promo-pic"/>
-                    <img src={promoCameras} alt="Motorola Edge 30 Ultra - Cameras" className="promo-pic"/>
-                    <img src={promoCharging} alt="Motorola Edge 30 Ultra - Carregamento" className="promo-pic"/>
-                </section>
-                <footer>
-                    <h5>DE <span className='cut'><h2>R$ 5.199</h2></span> por <h2><span className='destaque'>R$ 3.599</span></h2><p>Via pix ou 1x no cartão</p></h5>
-                </footer>     
-            </div>
-            <div className="promo-1">
-                <h2 className="tit-promo">Promoção Setembro Amerelo - <span className='set-amarelo'>Moto Edge 30 Ultra</span></h2>
-                
-                <section className="conteudo">
-                    <img src={promoMain} alt="Motorola Edge 30 Ultra" className="promo-pic"/>
-                    <img src={promoCameras} alt="Motorola Edge 30 Ultra - Cameras" className="promo-pic"/>
-                    <img src={promoCharging} alt="Motorola Edge 30 Ultra - Carregamento" className="promo-pic"/>
-                </section>
-                <footer>
-                    <h5>DE <span className='cut'><h2>R$ 5.199</h2></span> por <h2><span className='destaque'>R$ 3.599</span></h2><p>Via pix ou 1x no cartão</p></h5>
-                </footer>    
-            </div>
+            <h1>PROMOÇÕES IMPERDÍVEIS<p>SETEMBRO AMARELO</p></h1>
+            <Link to={VisualizarAparelho}>
+                <div className="promo-1">       
+                    <img src={promo1} alt="Motorola Edge 30 Ultra" className="promo-pic"/>
+                </div>
+            </Link>
+            <Link to={VisualizarAparelho}>
+                <div className="promo-1">
+                        <img src={promo2} alt="Motorola Edge 30 Ultra" className="promo-pic"/>
+                </div>
+            </Link>    
          </body>
     )
 }   
